@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DependentComponentPickerView.swift
 //  pickers
 //
 //  Created by Kshitij Suthar on 2017-10-11.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ViewController: UITabBarController {
+class DependentComponentPickerView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 
 }
-

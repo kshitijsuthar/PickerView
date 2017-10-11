@@ -1,26 +1,136 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="j72-3c-Fm3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Single-->
+        <scene sceneID="rcE-a6-bHF">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jlq-tT-Ajo" customClass="SingleComponentPickerView" customModule="pickers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="h64-Aw-xLG"/>
+                        <viewControllerLayoutGuide type="bottom" id="bMu-6d-jt7"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="G6G-Pp-fC1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="fZ0-Gg-QBm"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcR-we-fqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="713" y="-170"/>
+        </scene>
+        <!--Custom-->
+        <scene sceneID="AWB-2X-O4x">
+            <objects>
+                <viewController id="2oW-mI-CoS" customClass="CustomPickerView" customModule="pickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="55f-8v-QmE"/>
+                        <viewControllerLayoutGuide type="bottom" id="y4v-6S-mxW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LhY-5B-MIu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="bUI-3S-QYr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIL-l0-SFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-676" y="1154"/>
+        </scene>
+        <!--Dependent-->
+        <scene sceneID="vtg-y1-bHf">
+            <objects>
+                <viewController id="vaV-bo-jc1" customClass="DependentComponentPickerView" customModule="pickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N1N-wz-fSo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wxl-td-5Wg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ufN-0H-DX7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="NH3-p7-gpW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9k-79-42e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="1154"/>
+        </scene>
+        <!--Double-->
+        <scene sceneID="nnB-P2-cee">
+            <objects>
+                <viewController id="kS7-zt-5Fg" customClass="DoubleComponentPickerView" customModule="pickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hz2-AO-gmx"/>
+                        <viewControllerLayoutGuide type="bottom" id="M8c-wH-Vky"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ngx-C3-QTm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="80T-Vp-EzU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgv-j2-gVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="491"/>
+        </scene>
+        <!--Date-->
+        <scene sceneID="Kd3-se-rWi">
+            <objects>
+                <viewController id="mLP-H3-OdZ" customClass="DatePickerViewController" customModule="pickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dLL-Ke-Db3"/>
+                        <viewControllerLayoutGuide type="bottom" id="lQo-gQ-d8c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fiS-Ma-dPO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Date" image="clockicon" id="w3Z-ed-vSe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x7E-U2-uyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="-828"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kh4-go-Dx7">
+            <objects>
+                <tabBarController id="j72-3c-Fm3" customClass="ViewController" customModule="pickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="9TF-Q4-oZ8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mLP-H3-OdZ" kind="relationship" relationship="viewControllers" id="5Md-bY-SzM"/>
+                        <segue destination="jlq-tT-Ajo" kind="relationship" relationship="viewControllers" id="pbw-Ko-beR"/>
+                        <segue destination="kS7-zt-5Fg" kind="relationship" relationship="viewControllers" id="N8W-43-oSx"/>
+                        <segue destination="vaV-bo-jc1" kind="relationship" relationship="viewControllers" id="IBm-vx-8nx"/>
+                        <segue destination="2oW-mI-CoS" kind="relationship" relationship="viewControllers" id="CFd-Ky-0Gs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gBj-i0-PXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-302" y="-78"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clockicon" width="24" height="24"/>
+        <image name="dependenticon" width="25" height="24"/>
+        <image name="doubleicon" width="25" height="24"/>
+        <image name="singleicon" width="25" height="24"/>
+        <image name="toolicon" width="24" height="24"/>
+    </resources>
 </document>
