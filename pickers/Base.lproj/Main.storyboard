@@ -20,7 +20,26 @@
                     <view key="view" contentMode="scaleToFill" id="G6G-Pp-fC1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNS-qL-vq2">
+                                <rect key="frame" x="0.0" y="28" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcW-Gy-xT6">
+                                <rect key="frame" x="164" y="287" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="UaT-03-suA"/>
+                                </constraints>
+                                <state key="normal" title="Select"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bcW-Gy-xT6" firstAttribute="top" secondItem="fNS-qL-vq2" secondAttribute="bottom" constant="43" id="4bo-DQ-hCs"/>
+                            <constraint firstItem="fNS-qL-vq2" firstAttribute="centerX" secondItem="bcW-Gy-xT6" secondAttribute="centerX" id="9lq-cR-qtW"/>
+                            <constraint firstItem="fNS-qL-vq2" firstAttribute="leading" secondItem="G6G-Pp-fC1" secondAttribute="leading" id="Dgn-Ym-Gsh"/>
+                            <constraint firstAttribute="trailing" secondItem="fNS-qL-vq2" secondAttribute="trailing" id="rdd-HM-302"/>
+                            <constraint firstItem="fNS-qL-vq2" firstAttribute="top" secondItem="h64-Aw-xLG" secondAttribute="bottom" constant="8" symbolic="YES" id="xK3-b4-hfn"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="fZ0-Gg-QBm"/>
                 </viewController>
@@ -58,7 +77,26 @@
                     <view key="view" contentMode="scaleToFill" id="ufN-0H-DX7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bu0-XY-vrE">
+                                <rect key="frame" x="0.0" y="28" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIY-YM-BTY">
+                                <rect key="frame" x="164" y="287" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="iXs-we-O1J"/>
+                                </constraints>
+                                <state key="normal" title="Select"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bu0-XY-vrE" firstAttribute="top" secondItem="N1N-wz-fSo" secondAttribute="bottom" constant="8" symbolic="YES" id="9FW-Ol-xG1"/>
+                            <constraint firstAttribute="trailing" secondItem="bu0-XY-vrE" secondAttribute="trailing" id="9oR-gb-vkt"/>
+                            <constraint firstItem="BIY-YM-BTY" firstAttribute="top" secondItem="bu0-XY-vrE" secondAttribute="bottom" constant="43" id="CJG-cC-2Ff"/>
+                            <constraint firstItem="bu0-XY-vrE" firstAttribute="centerX" secondItem="BIY-YM-BTY" secondAttribute="centerX" id="IG7-j3-IKh"/>
+                            <constraint firstItem="bu0-XY-vrE" firstAttribute="leading" secondItem="ufN-0H-DX7" secondAttribute="leading" id="NII-IU-ElS"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="NH3-p7-gpW"/>
                 </viewController>
@@ -77,7 +115,26 @@
                     <view key="view" contentMode="scaleToFill" id="ngx-C3-QTm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGn-W8-Ttn">
+                                <rect key="frame" x="0.0" y="28" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l45-Qy-4A3">
+                                <rect key="frame" x="164" y="287" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="DCc-SL-K2s"/>
+                                </constraints>
+                                <state key="normal" title="Select"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l45-Qy-4A3" firstAttribute="top" secondItem="qGn-W8-Ttn" secondAttribute="bottom" constant="43" id="GLW-Mr-zuW"/>
+                            <constraint firstItem="qGn-W8-Ttn" firstAttribute="centerX" secondItem="l45-Qy-4A3" secondAttribute="centerX" id="dps-Dx-kwa"/>
+                            <constraint firstAttribute="trailing" secondItem="qGn-W8-Ttn" secondAttribute="trailing" id="i4x-Y1-g2G"/>
+                            <constraint firstItem="qGn-W8-Ttn" firstAttribute="leading" secondItem="ngx-C3-QTm" secondAttribute="leading" id="iD0-Vv-wQd"/>
+                            <constraint firstItem="qGn-W8-Ttn" firstAttribute="top" secondItem="Hz2-AO-gmx" secondAttribute="bottom" constant="8" symbolic="YES" id="t5e-ag-PBJ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="80T-Vp-EzU"/>
                 </viewController>
@@ -96,9 +153,40 @@
                     <view key="view" contentMode="scaleToFill" id="fiS-Ma-dPO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="UOT-ez-6Md">
+                                <rect key="frame" x="0.0" y="28" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="529457135.74186099">
+                                    <!--2017-10-11 23:25:35 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                    <!--2037-12-31 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aol-7l-ie3">
+                                <rect key="frame" x="164" y="287" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="mLP-H3-OdZ" eventType="touchUpInside" id="8cv-oT-PKg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Aol-7l-ie3" firstAttribute="top" secondItem="UOT-ez-6Md" secondAttribute="bottom" constant="43" id="2m7-eF-Pdp"/>
+                            <constraint firstItem="Aol-7l-ie3" firstAttribute="leading" secondItem="fiS-Ma-dPO" secondAttribute="leading" constant="164" id="55S-jb-34d"/>
+                            <constraint firstItem="UOT-ez-6Md" firstAttribute="top" secondItem="dLL-Ke-Db3" secondAttribute="bottom" constant="8" symbolic="YES" id="GVA-Oy-TU4"/>
+                            <constraint firstAttribute="trailing" secondItem="UOT-ez-6Md" secondAttribute="trailing" id="NS1-as-898"/>
+                            <constraint firstItem="UOT-ez-6Md" firstAttribute="leading" secondItem="fiS-Ma-dPO" secondAttribute="leading" id="vSa-R4-1gX"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Date" image="clockicon" id="w3Z-ed-vSe"/>
+                    <connections>
+                        <outlet property="datePicker" destination="UOT-ez-6Md" id="NFT-Bj-qrr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x7E-U2-uyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
