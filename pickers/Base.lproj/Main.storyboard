@@ -23,6 +23,10 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNS-qL-vq2">
                                 <rect key="frame" x="0.0" y="28" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jlq-tT-Ajo" id="jAk-Ad-EYx"/>
+                                    <outlet property="delegate" destination="jlq-tT-Ajo" id="OZG-Ba-owH"/>
+                                </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcW-Gy-xT6">
                                 <rect key="frame" x="164" y="287" width="46" height="30"/>
@@ -30,6 +34,9 @@
                                     <constraint firstAttribute="width" constant="46" id="UaT-03-suA"/>
                                 </constraints>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="jlq-tT-Ajo" eventType="touchUpInside" id="cWy-k5-NCN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,6 +49,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="fZ0-Gg-QBm"/>
+                    <connections>
+                        <outlet property="singlePicker" destination="fNS-qL-vq2" id="FoU-68-6b8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcR-we-fqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
